@@ -64,7 +64,7 @@ export default function glslify(userOptions = {}) {
             }
 
             return {
-                code: `export default ${JSON.stringify(code)}; // eslint-disable-line`,
+                code,
                 map: { mappings: '' }
             };
         }
